@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+   body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('Anotação2023-11-22175907.png');
+    background-size: 1500px; /* Ajusta o tamanho da imagem mantendo a proporção original */
+    background-repeat: no-repeat;
+    background-position: left;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+
+    .login-container {
+      
+      padding: 20px;
+      box-sizing: border-box;
+      width: 300px; /* Largura do container de login */
+      text-align: left;
+      position: relative; /* Para posicionar os elementos filhos relativamente */
+     
+    }
+
+    .sysmed-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plus-symbol {
+      position: absolute;
+      top: 10px; /* Posiciona acima do título */
+      right: 180px;
+      font-size: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: none; /* Remove a borda */
+    }
+
+    .forgot-password {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      justify-content: flex-start; /* Alinha à esquerda */
+    }
+
+    .checkbox-container input {
+      margin-right: 1px;
+    }
+
+    .round-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #03188d; /* Cor do botão */
+      color: #f2f3f7; /* Cor do texto do botão */
+      border: none;
+      cursor: pointer;
+      border-radius: 5px; /* Borda arredondada */
+      text-align: center;
+    }
+
+    .round-button:hover {
+      background-color: #2980b9; /* Cor do botão ao passar o mouse */
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="plus-symbol">+</div>
+    <div class="sysmed-title">Sysmed</div>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" required>
+
+    <div class="forgot-password">
+      <a href="#">Esqueci a senha</a>
+    </div>
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="accept-terms" name="accept-terms">
+      <label for="accept-terms">Eu aceito os termos de uso</label>
+    </div>
+
+    <button class="round-button" type="submit">Entrar</button>
+  </div>
+</body>
+</html>
